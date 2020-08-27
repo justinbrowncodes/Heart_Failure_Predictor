@@ -39,7 +39,7 @@ For this classification task, I decided to use these 6 models:
   * __Random Forest__
   * __Support Vector Machine__
   
-  Some of these models, however, needed their respective 'n' parameter to be tuned. For example, the KNN requires a value for the number of nearest neighbors. Using a simple loop, I trained the model with values incrementing within a likely range, and chose the model with the highest accuracy.
+Some of these models, however, needed their respective 'n' parameter to be tuned. For example, the KNN requires a value for the number of nearest neighbors. Using a simple loop, I trained the model with values incrementing within a likely range, and chose the model with the highest accuracy.  
 ![alt text](https://github.com/justinbrowncodes/Heart_Failure_Predictor/blob/master/plots/knnplot.png "Nearest Neighbor plot")  
   
 Since n=5 yields the highest accuracy, I used this n-value for the KNN model. I repeated this process for the Decision Tree and Random Forest models as well.
