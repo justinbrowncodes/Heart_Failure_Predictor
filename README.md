@@ -11,11 +11,16 @@ I developed and evaluated several machine learning models to predict patient's m
   * Collected and displayed 4 performance metrics for evaluating each model.
   
 ## Resources
-*Python Version*: 3.7
-*Packages*: Pandas, NumPy, MatPlotLib, Seaborn, SciKit-Learn
+**Python Version**: 3.7
+**Packages**: Pandas, NumPy, MatPlotLib, Seaborn, SciKit-Learn
 
 ## Exploratory Data Analysis
 Initially, I examined the dataset for null values or potentially unhelpful categories. Using the .info() and .describe() methods gave crucial insight into the data's central tendencies.
-Next, I separated the data into either numerical and binary categories, and used histograms to understand the distibutions.
+Next, I separated the data into either numerical and binary categories, and used histograms to understand the distributions.
 
+Here is a pivot table showing some relevant averages between Death Events and various numerical categories:
+![alt text](https://github.com/justinbrowncodes/Heart_Failure_Predictor/blob/master/plots/numpivot.jpg "Pivot Table")
+
+This is the correlation Heatmap that helps recognize if two categories are closely related. Discovering any strong correlations early on is vital for avoiding multicolinearity within the models.
 ![alt text](https://github.com/justinbrowncodes/Heart_Failure_Predictor/blob/master/plots/correlations.png "Correlation Heatmap")
+
