@@ -20,6 +20,8 @@ Next, I separated the data into either numerical and binary categories, and used
 
 This pivot table illustrates some relevant averages between Death Events and various numerical categories:
 ![alt text](https://github.com/justinbrowncodes/Heart_Failure_Predictor/blob/master/plots/numpivot.JPG "Pivot Table")
+Notice that the average age is higher for positive Death Events (Basically, most of the deceased patients are older). Because of this metric alone, I was most likely going to use "age" as a category for training the models. However, the "serum sodium" category has very similar averages for both negative and positive death events. I considered this catagory mostly unhelpful for training the models later on. 
+
 
 This is the correlation Heatmap that helps recognize if two categories are closely related. Discovering any strong correlations early on is vital for avoiding multicolinearity within the models.
 
